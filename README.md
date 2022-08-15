@@ -75,7 +75,7 @@ package sol
 func isPalindrome(s string) bool {
 	lp, rp := 0, len(s)-1
 	var isAlphaBet = func(c byte) bool {
-		if ('a' <= c && 'z' >= c) || ('A' <= c && 'Z' >= c) {
+		if ('a' <= c && 'z' >= c) || ('A' <= c && 'Z' >= c) || ('0' <= c && c <= '9') {
 			return true
 		}
 		return false
