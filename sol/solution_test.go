@@ -32,6 +32,11 @@ func Test_isPalindrome(t *testing.T) {
 			args: args{s: " "},
 			want: true,
 		},
+		{
+			name: "0P",
+			args: args{s: "0P"},
+			want: false,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
